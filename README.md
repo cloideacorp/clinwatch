@@ -27,11 +27,6 @@ ClinVar's classification changed and whether it now disagrees with what you repo
   warns about values that look like personal data.
 - **macOS app:** a Turkish/English wizard for Apple silicon with the CLI built in.
 
-## Status
-
-Working: panel import, release download and verification, `diff` with text, HTML and Excel output,
-and the macOS app. Planned but **not implemented yet**: `releases`, `report` and `watch` (each
-exits with an error). See [`PLAN.md`](PLAN.md).
 
 ## Install
 
@@ -47,18 +42,6 @@ open macos/ClinwatchMac/dist/Clinwatch-0.1.0-arm64.dmg
 The `clinwatch` CLI is embedded in the app, so nothing else needs to be installed. The app is
 signed ad hoc, not notarized: on another Mac, open it the first time with right-click → **Open**.
 More in [`macos/ClinwatchMac/README.md`](macos/ClinwatchMac/README.md).
-
-### CLI from source
-
-Needs a stable Rust toolchain.
-
-```bash
-cargo build --release
-./target/release/clinwatch --help
-```
-
-Always use the `--release` build for real ClinVar files: the debug build verifies and scans them
-many times more slowly.
 
 ## Quick start (offline)
 
