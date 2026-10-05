@@ -42,7 +42,6 @@ open macos/ClinwatchMac/dist/Clinwatch-0.1.0-arm64.dmg
 
 The `clinwatch` CLI is embedded in the app, so nothing else needs to be installed. The app is
 signed ad hoc, not notarized: on another Mac, open it the first time with right-click → **Open**.
-More in [`macos/ClinwatchMac/README.md`](macos/ClinwatchMac/README.md).
 
 ## Quick start (offline)
 
