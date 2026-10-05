@@ -36,7 +36,7 @@ ClinVar's classification changed and whether it now disagrees with what you repo
 Build the disk image, open it, and drag **Clinwatch** to Applications:
 
 ```bash
-open Clinwatch-0.1.0-arm64.dmg
+open Clinwatch-0.1.1-arm64.dmg
 ```
 
 The `clinwatch` CLI is embedded in the app, so nothing else needs to be installed. The app is
