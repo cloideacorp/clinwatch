@@ -166,20 +166,3 @@ For use in scripts and scheduled jobs:
 - The PII guard warns when `report_id`, `subject_ref` or `notes` contain something that looks like
   a national ID (11 digits), an email address, a date of birth, or a name. Use `--strict-pii` to
   refuse such files. This is a safety net, not a compliance guarantee.
-
-## Development
-
-```bash
-cargo test                                   # fully offline
-cargo clippy --all-targets -- -D warnings
-cargo fmt --check
-swift test --package-path macos/ClinwatchMac
-```
-
-Contributor rules are in [`CLAUDE.md`](CLAUDE.md), milestones and decisions in
-[`PLAN.md`](PLAN.md), and the provenance of the test fixtures in
-[`tests/fixtures/README.md`](tests/fixtures/README.md).
-
-## License
-
-MIT. See [`LICENSE`](LICENSE).
