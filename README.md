@@ -1,4 +1,4 @@
-##ClinWatch
+## ClinWatch
 
 **Find out when ClinVar reclassifies a variant your lab has already reported.**
 
