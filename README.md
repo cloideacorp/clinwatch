@@ -42,6 +42,27 @@ open Clinwatch-0.1.1-arm64.dmg
 The `clinwatch` CLI is embedded in the app, so nothing else needs to be installed. The app is
 signed ad hoc, not notarized: on another Mac, open it the first time with right-click → **Open**.
 
+### Linux app (Ubuntu 24.04, x86_64)
+
+Install the package with apt, which also installs the libraries it needs (GTK 4, libadwaita,
+WebKitGTK):
+
+```bash
+sudo apt install ./clinwatch_0.1.0_amd64.deb
+```
+
+This installs two programs in `/usr/bin`:
+
+- `clinwatch-gtk`: the desktop app. Open it from the applications menu (search for
+  **Clinwatch**) or run `clinwatch-gtk` in a terminal.
+- `clinwatch`: the command-line tool, ready to use in any terminal.
+
+The app follows the system language (Turkish or English); you can change it under
+menu → **Settings**. The database and reports are kept in `~/.local/share/clinwatch/`, and
+downloaded ClinVar releases in `~/.cache/clinwatch/releases/`.
+
+
+
 ## Quick start (offline)
 
 The repository includes a synthetic example panel and small slices of two real ClinVar releases,
